@@ -6,11 +6,9 @@ using System.Threading.Tasks;
 
 namespace AbstractFactory1
 {
-    public class Archer : IPlayer
+    public interface AttackState
     {
-        public void GetStatus(string name, string description, string weapon, int hp, string type)
-        {
-        }
-      
+     
+        public void Attack();
     }
 }

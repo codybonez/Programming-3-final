@@ -15,7 +15,7 @@
              
 
 
-
+            // TODO: create attack state for enemy and player
 
             do
             {
@@ -33,6 +33,7 @@
                             Knight knight = new Knight();
                             
                             knight.GetStatus(Name,Description,Weapon,HP,Type);
+
                             break;
 
                         }

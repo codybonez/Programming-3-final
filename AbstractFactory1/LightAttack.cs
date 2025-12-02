@@ -6,11 +6,13 @@ using System.Threading.Tasks;
 
 namespace AbstractFactory1
 {
-    public class Archer : IPlayer
+    public abstract class LightAttack : AttackState
     {
-        public void GetStatus(string name, string description, string weapon, int hp, string type)
-        {
-        }
       
+
+        public void Attack()
+        {
+            Console.WriteLine("Light attack deals 50 damage");
+        }
     }
 }

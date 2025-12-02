@@ -9,9 +9,10 @@ namespace AbstractFactory1
 {
     public   class Knight : IPlayer
     {
-  
+       
         public void GetStatus(string name, string description,string weapon, int hp, string type)
         {
+            HeavyAttack attack = new HeavyAttack();
             Console.WriteLine("\nInsert name for the knight\n");
             name = Console.ReadLine();
 
@@ -35,13 +36,13 @@ namespace AbstractFactory1
 
 
 
-
+            attack.Attack();
             Console.WriteLine($"\nKnights name: {name}");
             Console.WriteLine($"\nKnights description: {description}");
             Console.WriteLine($"\nKnight weapon: {weapon}");
             Console.WriteLine($"\nKnight health points: {hp}");
             Console.WriteLine($"\nKnight type: {type}");
-
+            
 
 
         }
