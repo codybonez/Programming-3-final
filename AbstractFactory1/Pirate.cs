@@ -10,6 +10,7 @@ namespace AbstractFactory1
     {
         public void GetStatus(string name, string description, string weapon, int hp, string type)
         {
+            HeavyAttack heavyAttack = new HeavyAttack();
             Console.WriteLine("\nInsert name for the pirate\n");
             name = Console.ReadLine();
 
@@ -32,7 +33,7 @@ namespace AbstractFactory1
             Console.ReadKey();
 
 
-
+            heavyAttack.Attack();
             Console.WriteLine($"\nPirates name: {name}");
             Console.WriteLine($"\nPirates description: {description}");
             Console.WriteLine($"\nPirates weapon: {weapon}");

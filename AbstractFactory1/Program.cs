@@ -39,11 +39,15 @@
                         }
                         else if (preset.Equals("Dwarf", StringComparison.OrdinalIgnoreCase))
                         {
-                            // make instance of dwarf class, use get status 
+                            Dwarf dwarf = new Dwarf();
+                            dwarf.GetStatus(Name,Description,Weapon,HP, Type);
+                            break;
                         }
                         else if (preset.Equals("Archer", StringComparison.OrdinalIgnoreCase))
                         {
-
+                            Archer archer = new Archer();
+                            archer.GetStatus(Name,Description,Weapon,HP,Type);
+                            break;
                         }
 
                             break;
@@ -61,16 +65,22 @@
                         }
                         else if (preset.Equals("Goblin", StringComparison.OrdinalIgnoreCase))
                         {
-
+                            Goblin goblin = new Goblin();
+                            goblin.GetStatus(Name, Description,Weapon,HP,Type);
+                            break;
                         }
                         else if (preset.Equals("Slime", StringComparison.OrdinalIgnoreCase))
                         {
-
+                            Slime slime = new Slime();
+                            slime.GetStatus(Name, Description,Weapon,HP,Type);
+                            break;
 
                         }
                         else if (preset.Equals("Dragon", StringComparison.OrdinalIgnoreCase))
                         {
-
+                            Dragon dragon = new Dragon();
+                            dragon.GetStatus(Name, Description, Weapon, HP, Type);
+                            break;
                         }
                         
 

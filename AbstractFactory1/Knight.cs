@@ -12,7 +12,7 @@ namespace AbstractFactory1
        
         public void GetStatus(string name, string description,string weapon, int hp, string type)
         {
-            HeavyAttack attack = new HeavyAttack();
+            HeavyAttack heavy = new HeavyAttack();
             Console.WriteLine("\nInsert name for the knight\n");
             name = Console.ReadLine();
 
@@ -36,7 +36,7 @@ namespace AbstractFactory1
 
 
 
-            attack.Attack();
+            heavy.Attack();
             Console.WriteLine($"\nKnights name: {name}");
             Console.WriteLine($"\nKnights description: {description}");
             Console.WriteLine($"\nKnight weapon: {weapon}");

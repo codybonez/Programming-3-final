@@ -6,13 +6,11 @@ using System.Threading.Tasks;
 
 namespace AbstractFactory1
 {
-    public  class LightAttack : AttackState
+    internal class Projectile : AttackState
     {
-      
-
         public void Attack()
         {
-            Console.WriteLine("Light attack deals 50 damage");
+            Console.WriteLine("Projectile attack goes for 40 damage");
         }
     }
 }
